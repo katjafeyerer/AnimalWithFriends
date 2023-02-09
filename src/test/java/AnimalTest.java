@@ -1,5 +1,6 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -31,6 +32,7 @@ class AnimalTest {
     }
 
     @Test
+    @DisplayName("Das ist der Test für den Namen und das Alter")
     void getNameAndAge() {
         String expected = "Name: fitim Alter: 1";
         String actual = loewe.getNameAndAge();
